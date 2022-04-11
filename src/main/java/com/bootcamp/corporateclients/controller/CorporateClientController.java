@@ -17,9 +17,9 @@ public class CorporateClientController {
         return service.findAll();
     }
 
-    @GetMapping("/find/{document}")
-    public Flux<CorporateClient> findByDocumentId(@PathVariable("document") String document){
-        return service.getByDocumentId(document);
+    @GetMapping("/find/{ruc}")
+    public Flux<CorporateClient> findByRuc(@PathVariable("ruc") String ruc){
+        return service.getByRuc(ruc);
     }
 
     @PostMapping

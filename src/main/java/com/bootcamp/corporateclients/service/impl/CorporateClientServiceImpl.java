@@ -40,8 +40,8 @@ public class CorporateClientServiceImpl implements CorporateClientService {
     }
 
     @Override
-    public Flux<CorporateClient> getByDocumentId(String num) {
-        return repository.findByDocumentId(num);
+    public Flux<CorporateClient> getByRuc(String ruc) {
+        return repository.findByRuc(ruc);
     }
     
 }
