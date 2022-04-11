@@ -11,7 +11,8 @@ public class CorporateClient {
     private String id;
     private String name;
     private String lastName;
-    private String ruc;
+    private String documentId;
+    private String documentType;
     private String address;
     private String phone;
     private String maritalStatus;
