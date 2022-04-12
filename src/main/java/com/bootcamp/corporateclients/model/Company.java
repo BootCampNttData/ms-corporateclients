@@ -10,7 +10,8 @@ public class Company {
     @Id
     private String id;
     private String rucNumber;
-    private String[] accountHolderRucs;
+    private String[] accountHolderDocId;
+    private String[] signersDocId;
     private String companyName;
     private String address;
     private String phone;
