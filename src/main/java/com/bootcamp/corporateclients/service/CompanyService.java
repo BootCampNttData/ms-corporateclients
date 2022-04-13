@@ -8,7 +8,7 @@ public interface CompanyService {
 
     Flux<Company> findAll();
     Mono<Company> create(Company company);
-    Flux<Company> getByDocumentId(String num);
+    Flux<Company> getByRucNumber(String rucNumber);
     Mono<Company> update(Company company);
     Mono<Company> deleteById(String id);
     Mono delete(Company company);

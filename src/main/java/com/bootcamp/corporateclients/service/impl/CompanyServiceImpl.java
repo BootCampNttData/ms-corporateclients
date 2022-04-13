@@ -40,8 +40,8 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public Flux<Company> getByDocumentId(String num) {
-        return repository.findByRucNumber(num);
+    public Flux<Company> getByRucNumber(String rucNumber) {
+        return repository.findByRucNumber(rucNumber);
     }
 
 }
