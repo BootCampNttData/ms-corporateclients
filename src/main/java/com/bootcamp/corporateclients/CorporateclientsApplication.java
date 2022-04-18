@@ -6,8 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CorporateclientsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CorporateclientsApplication.class, args);
-	}
+  public static void main(String[] args) {
+    System.setProperty("jdk.tls.client.protocols", "TLSv1.2");
+    SpringApplication.run(CorporateclientsApplication.class, args);
+  }
 
 }
